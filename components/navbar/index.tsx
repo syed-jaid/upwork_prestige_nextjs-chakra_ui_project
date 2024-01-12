@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import NavbarItems from "./navbar-items";
+import NavbarItemsHover from "./navbar-items-hover";
+import NavbarMobileView from "./navbar-mobile-view";
+import NavbarEnd from "./navbar-end";
+import NavbarLogo from "./navbar-logo";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,59 +44,34 @@ const Navbar = () => {
       }}
     >
       <Box
-        maxWidth="1280px"
-        paddingX="40px"
-        paddingY="20px"
         background="#0f0f0f"
-        color="white"
-        borderBottom="1px solid #1f1e1e"
+        borderBottom="1px solid #2d2d2d"
       >
-        <Box display="flex" alignItems="center" justifyContent="space-between">
+        <Box
+          maxWidth="1280px"
+          padding="20px"
+          marginX='auto'
+          display="flex"
+          alignItems="center"
+          justifyContent="space-between"
+        >
           {/* Website logo */}
-          <Link href={"/"}>
-            <Flex alignItems={"center"} gap={"4px"}>
-              <Img
-                width={"22px"}
-                height={"20px"}
-                marginBottom={"1"}
-                src="../Images/logo.png"
-                alt="website logo"
-              />
-              <Text fontSize={"18px"} fontWeight={"600"}>
-                Prestige
-              </Text>
-            </Flex>
-          </Link>
+          <NavbarLogo />
+
+          {/* Navbar mobile view */}
+          <NavbarMobileView />
 
           {/* Navbar Items */}
-          <NavbarItems />
-          {/* Sign in and sign up button */}
+          <Flex display={{ base: 'none', md: 'flex' }}>
+            <NavbarItemsHover />
+            <NavbarItems />
+          </Flex>
 
-          <Box>
-            <Link href={"/log-in"}>
-              <Button
-                color={"white"}
-                background={"transparent"}
-                fontWeight={"600"}
-                _hover={{ background: "transparent" }}
-              >
-                Log In
-              </Button>
-            </Link>
-            <Link href={"/sign-up"}>
-              <Button
-                color={"white"}
-                background={"gary.800"}
-                padding={"0 14px"}
-                borderRadius={"40px"}
-                fontWeight={"600"}
-                border={"1px solid #3b3b3b"}
-                _hover={{ background: "gray.700" }}
-              >
-                Get Started
-              </Button>
-            </Link>
+          {/* Sign in and sign up button */}
+          <Box display={{ base: 'none', md: 'block' }}>
+            <NavbarEnd />
           </Box>
+
         </Box>
       </Box>
     </motion.div>

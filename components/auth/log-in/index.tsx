@@ -1,8 +1,8 @@
 "use client";
 import { Box, Button, Divider, Flex, Img, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import AuthButton from "../auth-button";
-import InputField from "../input-field";
+import AuthButton from "../../core/auth/auth-button";
+import InputField from "../../core/auth/input-field";
 import { useState } from "react";
 
 const LogInPage = () => {

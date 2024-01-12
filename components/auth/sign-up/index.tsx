@@ -1,8 +1,8 @@
 import { Box, Button, Img, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
-import InputField from "../input-field";
-import AuthButton from "../auth-button";
+import InputField from "../../core/auth/input-field";
+import AuthButton from "../../core/auth/auth-button";
 
 const SignUpPage = () => {
   return (
