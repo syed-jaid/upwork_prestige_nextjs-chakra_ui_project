@@ -4,10 +4,10 @@ import React from 'react';
 const SectionHeader = ({ headerText, description }: any) => {
     return (
         <Box maxWidth='768px' marginX='auto' marginBottom='80px'>
-            <Text color='white' fontSize={{ base: '3xl', md: '5xl' }} fontWeight='semibold' textAlign='center' marginTop='10px'>
+            <Text color='white' textStyle='5xl/semibold' textAlign='center' marginTop='10px'>
                 {headerText}
             </Text>
-            <Text color='gray.400' fontSize={{ base: 'sm', sm: 'lg' }} textAlign='center'>
+            <Text color='gray.400' textStyle='lg/sm' textAlign='center'>
                 {description}
             </Text>
         </Box>

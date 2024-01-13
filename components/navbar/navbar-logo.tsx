@@ -4,16 +4,16 @@ import React from 'react';
 
 const NavbarLogo = () => {
     return (
-        <Link href={"/"}>
-            <Flex alignItems={"center"} gap={"4px"}>
+        <Link href="/">
+            <Flex alignItems="center" gap="4px">
                 <Img
-                    width={"22px"}
-                    height={"20px"}
-                    marginBottom={"1"}
+                    width="22px"
+                    height="20px"
+                    marginBottom="1"
                     src="../Images/logo.png"
                     alt="website logo"
                 />
-                <Text fontSize={"18px"} fontWeight={"medium"} color={'white'}>
+                <Text textStyle="lg/medium" color='white'>
                     Prestige
                 </Text>
             </Flex>

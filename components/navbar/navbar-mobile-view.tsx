@@ -76,10 +76,10 @@ const NavbarMobileView = () => {
             >
                 {mobileNavbarItems.map((item) => (
                     <Text
+                        cursor='pointer'
                         key={item}
                         color='gray.500'
-                        fontWeight='semibold'
-                        fontSize='2xl'
+                        textStyle='2xl/semibold'
                         marginBottom='20px'
                         _hover={{ color: 'white' }}
                     >

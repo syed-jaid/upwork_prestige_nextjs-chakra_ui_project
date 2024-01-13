@@ -11,8 +11,13 @@ import EasyCollaboration from './easy-collaboration';
 
 const MuchFeatures = () => {
     return (
-        <Box maxWidth='1280px' marginX='auto' marginBottom={{ base: '150px', md: '300px' }} paddingX={{ base: '20px', sm: "40px" }}>
-            <CommonButton icon={<PiLightningBold style={{ color: "#33c6ab" }} />} text={'Features'} />
+        <Box
+            maxWidth='1280px'
+            marginX='auto'
+            marginBottom={{ base: '150px', md: '300px' }}
+            paddingX={{ base: '20px', sm: "40px" }}
+        >
+            <CommonButton icon={<PiLightningBold style={{ color: "#33c6ab" }} />} text='Features' />
             <SectionHeader
                 headerText='And so much more'
                 description='All the features you need to build a better experience, explore the possibilities, and unlock the full potential of what we have to offer.'

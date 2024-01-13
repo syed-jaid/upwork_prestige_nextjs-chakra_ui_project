@@ -17,8 +17,6 @@ import SimpleAnalytics from './simple-analytics';
 import EasyCollaboration from './easy-collaboration';
 import SmartAutomation from './smart-automation';
 
-
-
 const FeaturesTab = () => {
     const [tab1, setTab1] = useState(true)
     const [tab2, setTab2] = useState(false)

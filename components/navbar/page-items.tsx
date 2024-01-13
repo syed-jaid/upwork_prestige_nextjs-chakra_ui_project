@@ -1,5 +1,6 @@
 import { pagesHoverItems } from '@/Data/navbar-data';
 import { Box, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 import React from 'react';
 
 const PageItems = () => {
@@ -14,25 +15,24 @@ const PageItems = () => {
                 pagesHoverItems.map(({ itemName, listItems }) =>
                     <Box>
                         <Text
-                            fontSize='md'
                             color='white'
-                            fontWeight='semibold'
+                            textStyle='sm/semibold'
                         >
                             {itemName}
                         </Text>
-
-                        {
-                            listItems.map((item) =>
+                        {listItems.map((item) =>
+                            <Link href='#'>
                                 <Text
-                                    fontSize='md'
+                                    cursor='pointer'
+                                    textStyle='md'
                                     color='gray.500'
                                     marginTop='20px'
                                     _hover={{ color: 'white' }}
                                 >
                                     {item}
                                 </Text>
-                            )
-                        }
+                            </Link>
+                        )}
                     </Box>
                 )
             }

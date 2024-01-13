@@ -1,5 +1,4 @@
 'use client'
-import { Box, Flex } from '@chakra-ui/react';
 import { useRef } from "react";
 import {
     motion,
@@ -8,7 +7,8 @@ import {
     useAnimationFrame
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
-import TestimonialCard from './testimonial-card';
+import { Box, Flex, Text } from "@chakra-ui/react";
+import { SiFramer } from "react-icons/si";
 
 interface ParallaxProps {
     children: any;
@@ -18,7 +18,7 @@ interface ParallaxProps {
 function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
     const baseX = useMotionValue(30);
 
-    const x = useTransform(baseX, (v) => `${wrap(0, -600, v)}px`)
+    const x = useTransform(baseX, (v) => `${wrap(0, -500, v)}px`)
 
     const directionFactor = useRef<number>(2);
     useAnimationFrame((t, delta) => {
@@ -28,73 +28,62 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 
     return (
         <Box
-            h='300px'
-            background='global_bg'
+            h='100px'
+            background='#0f0f0f'
             position="relative"
-            maxWidth={{
-                base: '300px',
-                sm: '500px',
-                md: '700',
-                lg: '990px',
-                xl: '1200px'
-            }}
+            maxWidth={{ base: '300px', sm: '400px', md: '800px' }}
             marginX='auto'
             overflow='hidden'
         >
             <motion.div style={{ x }}>
                 {children}
             </motion.div>
-            <Flex
+            <Box
                 top={0}
                 zIndex={1}
-                width={{
-                    base: '100px',
-                    sm: '200px',
-                    md: '350px',
-                    lg: '455px',
-                    xl: '600px'
-                }}
-                height="300px"
+                width={{ base: '300px', sm: '400px', md: '800px' }}
+                height="100px"
                 position='absolute'
                 background={`linear-gradient(to right,#0f0f0f, rgba(255,0,0,0))`}
             >
-            </Flex>
-            <Flex
-                width={{
-                    base: '100px',
-                    sm: '200px',
-                    md: '350px',
-                    lg: '455px',
-                    xl: '600px'
-                }}
-                height="300px"
-                align="center"
-                justify="space-between"
-                position='absolute'
+            </Box>
+            <Box
                 top={0}
-                right={0}
                 zIndex={1}
+                width={{ base: '300px', sm: '400px', md: '800px' }}
+                height="100px"
+                position='absolute'
                 background={`linear-gradient(to left,#0f0f0f, rgba(255,0,0,0))`}
             >
-            </Flex>
+            </Box>
         </Box>
     );
 }
 
-const TestimonialsCard = () => {
+export default function LeadersLogo() {
     return (
         <ParallaxText baseVelocity={-9}>
             <Flex
-                gap='30px'
                 background='global_bg'
+                gap='50px'
+                paddingTop='35px'
                 paddingX='20px'
             >
-                {Array(20).fill(null).map(() =>
-                    <TestimonialCard />
+                {Array(30).fill(null).map(() =>
+                    <Flex
+                        gap='10px'
+                        alignItems='center'
+                    >
+                        <SiFramer style={{ color: 'white', fontSize: '30px' }} />
+                        <Text
+                            color='white'
+                            textStyle='xl/bold'
+                        >
+                            Framer
+                        </Text>
+                    </Flex>
                 )}
             </Flex>
-        </ParallaxText >
+        </ParallaxText>
     );
-};
-
-export default TestimonialsCard;
+}

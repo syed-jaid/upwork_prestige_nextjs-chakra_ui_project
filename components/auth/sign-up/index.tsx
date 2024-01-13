@@ -14,13 +14,13 @@ const SignUpPage = () => {
     >
       <Link href="/">
         <Button
+          cursor='pointer'
           position="fixed"
-          top={"20px"}
-          left={"20px"}
+          top="20px"
+          left="20px"
           fontSize="xs"
           borderRadius="xl"
           color="white"
-          fontWeight="normal"
           background="gray.700"
           _hover={{ background: "gray.600" }}
         >
@@ -35,8 +35,7 @@ const SignUpPage = () => {
       />
 
       <Text
-        fontSize={{ base: "xl", sm: "3xl" }}
-        fontWeight="bold"
+        textStyle="3xl/bold"
         color="white"
         textAlign="center"
       >
@@ -52,28 +51,28 @@ const SignUpPage = () => {
 
       <Box marginTop="30px">
         <InputField
-          title={"E-mail"}
-          type={"email"}
-          placeholderText={"Your Work e-mail"}
+          title="E-mail"
+          type="email"
+          placeholderText="Your Work e-mail"
         />
 
         <InputField
-          title={"URL to monitor"}
-          type={"url"}
-          placeholderText={"https://www.microsoft.com/"}
+          title="URL to monitor"
+          type="url"
+          placeholderText="https://www.microsoft.com/"
         />
 
         <InputField
-          title={"Your phone number"}
-          type={"phone"}
-          placeholderText={"+880"}
+          title="Your phone number"
+          type="phone"
+          placeholderText="+880"
         />
 
         <AuthButton text="Sign Up" />
       </Box>
       <Text
         marginTop="32px"
-        fontSize="12px"
+        fontSize="xs"
         color="gray.500"
         textAlign="center"
       >

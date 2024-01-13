@@ -8,7 +8,7 @@ import WorkflowAccordion from './workflow-accordion';
 const WorkflowFeatures = () => {
     return (
         <Box maxWidth='1140px' paddingX='20px' marginX='auto' marginBottom={{ base: '150px', md: '300px' }}>
-            <CommonButton icon={<PiLightningBold style={{ color: "#33c6ab" }} />} text={'Features'} />
+            <CommonButton icon={<PiLightningBold style={{ color: "#33c6ab" }} />} text='Features' />
             <SectionHeader
                 headerText='Speed up your workflow'
                 description='We are excited to present our stunning solutions designed to address your unique needs and provide a seamless user experience.'

@@ -9,7 +9,11 @@ import { IoIosArrowForward } from 'react-icons/io';
 const EasyCollaboration = () => {
     return (
         <Box>
-            <Flex flexDirection={{ base: 'column', md: 'row' }} alignItems='center' justifyContent='space-between'>
+            <Flex
+                alignItems='center'
+                justifyContent='space-between'
+                flexDirection={{ base: 'column', md: 'row' }}
+            >
                 <Box maxWidth={{ base: '100%', md: '560px' }}>
                     <ReusableFeatureCard
                         background='yellow.900'
@@ -25,7 +29,7 @@ const EasyCollaboration = () => {
                 </Box>
                 <Flex
                     color='white'
-                    fontSize='md'
+                    textStyle='md'
                     gap='5px'
                     maxWidth='160px'
                     marginTop='50px'
@@ -43,7 +47,13 @@ const EasyCollaboration = () => {
             </Flex>
             <Flex flexWrap='wrap' marginTop='50px' >
                 <Box maxWidth={{ base: '100%', lg: '378px' }} marginX='auto'>
-                    <Img maxWidth={{ sm: '378px' }} marginX='auto' marginBottom='30px' borderRadius='3xl' src='../Images/easy-collaboration-1.webp' />
+                    <Img
+                        marginX='auto'
+                        marginBottom='30px'
+                        maxWidth={{ sm: '378px' }}
+                        borderRadius='3xl'
+                        src='../Images/easy-collaboration-1.webp'
+                    />
                     <ReusableSmallCard
                         icon={<FaRegCirclePlay style={{ color: "#F6AD55", fontSize: '20px' }} />}
                         headerText='Video editing'
@@ -51,7 +61,13 @@ const EasyCollaboration = () => {
                     />
                 </Box>
                 <Box maxWidth={{ base: '100%', lg: '378px' }} marginX='auto'>
-                    <Img maxWidth={{ sm: '378px' }} marginX='auto' marginBottom='30px' borderRadius='3xl' src='../Images/easy-collaboration-2.webp' />
+                    <Img
+                        marginX='auto'
+                        marginBottom='30px'
+                        borderRadius='3xl'
+                        maxWidth={{ sm: '378px' }}
+                        src='../Images/easy-collaboration-2.webp'
+                    />
                     <ReusableSmallCard
                         icon={<FaRegCirclePlay style={{ color: "#F6AD55", fontSize: '20px' }} />}
                         headerText='Video editing'
@@ -59,7 +75,13 @@ const EasyCollaboration = () => {
                     />
                 </Box>
                 <Box maxWidth={{ base: '100%', lg: '378px' }} marginX='auto'>
-                    <Img maxWidth={{ sm: '378px' }} marginX='auto' marginBottom='30px' borderRadius='3xl' src='../Images/easy-collaboration-3.webp' />
+                    <Img
+                        marginX='auto'
+                        marginBottom='30px'
+                        maxWidth={{ sm: '378px' }}
+                        borderRadius='3xl'
+                        src='../Images/easy-collaboration-3.webp'
+                    />
                     <ReusableSmallCard
                         icon={<FaRegCirclePlay style={{ color: "#F6AD55", fontSize: '20px' }} />}
                         headerText='Video editing'

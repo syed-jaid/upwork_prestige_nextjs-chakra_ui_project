@@ -1,7 +1,6 @@
 "use client";
-import { Box, Button, Flex, Img, Text } from "@chakra-ui/react";
+import { Box, Flex, } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import NavbarItems from "./navbar-items";
 import NavbarItemsHover from "./navbar-items-hover";
@@ -44,7 +43,7 @@ const Navbar = () => {
       }}
     >
       <Box
-        background="#0f0f0f"
+        background="global_bg"
         borderBottom="1px solid #2d2d2d"
       >
         <Box

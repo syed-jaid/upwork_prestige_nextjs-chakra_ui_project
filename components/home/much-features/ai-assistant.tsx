@@ -7,7 +7,10 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 
 const AiAssistant = () => {
     return (
-        <Flex flexDirection={{ base: 'column-reverse', lg: 'row' }} alignItems='center'>
+        <Flex
+            alignItems='center'
+            flexDirection={{ base: 'column-reverse', lg: 'row' }}
+        >
             <Box maxWidth={{ base: '100%', lg: '560px' }}>
                 <ReusableFeatureCard
                     background='teal.900'
@@ -19,7 +22,11 @@ const AiAssistant = () => {
                     description=' Designed to seamlessly integrate into your personal and professional life, our AI Assistant is here to revolutionize the way you accomplish tasks.'
                     buttonCenter='start'
                 />
-                <Flex flexDirection={{ base: 'column', sm: 'row' }} marginTop='50px' gap='40px'>
+                <Flex
+                    gap='40px'
+                    marginTop='50px'
+                    flexDirection={{ base: 'column', sm: 'row' }}
+                >
                     <ReusableSmallCard
                         icon={<FaRegCirclePlay style={{ color: "#38B2AC", fontSize: '20px' }} />}
                         headerText='Video editing'
@@ -32,7 +39,12 @@ const AiAssistant = () => {
                     />
                 </Flex>
             </Box>
-            <Img maxWidth={{ base: '100%', md: '552px' }} marginLeft='auto' marginRight={{ base: 'auto', lg: '0' }} src='../Images/ai-img.webp' />
+            <Img
+                marginLeft='auto'
+                maxWidth={{ base: '100%', md: '552px' }}
+                marginRight={{ base: 'auto', lg: '0' }}
+                src='../Images/ai-img.webp'
+            />
         </Flex>
     );
 };

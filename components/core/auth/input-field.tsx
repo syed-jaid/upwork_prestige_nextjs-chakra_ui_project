@@ -17,13 +17,13 @@ const InputField: React.FC<InputFieldProps> = ({
 
   return (
     <>
-      <Text color="gray.500" fontSize="sm" marginLeft="1" marginBottom="2">
+      <Text color="gray.500" textStyle="sm" marginLeft="1" marginBottom="2">
         {title}
       </Text>
       <Input
         type={type}
         placeholder={placeholderText}
-        fontSize="sm"
+        textStyle="sm"
         color="white"
         background="gray.700"
         border={`1px solid  ${theme.colors.gray[700]}`}

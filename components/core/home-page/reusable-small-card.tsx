@@ -6,15 +6,15 @@ const ReusableSmallCard = ({ icon, headerText, description }: any) => {
     return (
         <Box >
             {icon}
-            <Text color='white' fontSize='md' fontWeight='semibold' marginTop='12px'>
+            <Text color='white' textStyle='md/semibold' marginTop='12px'>
                 {headerText}
             </Text>
-            <Text color='gray.500' fontSize='md' marginTop='8px'>
+            <Text color='gray.500' textStyle='md' marginTop='8px'>
                 {description}
             </Text>
             <Flex
                 color='white'
-                fontSize='md'
+                textStyle='md'
                 gap='5px'
                 marginTop='15px'
                 _hover={{ color: 'gray.400' }}

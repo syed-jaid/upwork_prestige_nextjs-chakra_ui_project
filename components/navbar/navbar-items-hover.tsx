@@ -23,7 +23,7 @@ const NavbarItemsHover = () => {
         transform: `rotate(${hoveredItem === 'Pages' ? '-180deg' : '0deg'})`,
     };
     return (
-        <Flex gap={"23px"} alignItems={"center"} mr={'23px'}>
+        <Flex gap="23px" alignItems="center" mr='23px'>
             {navbarItemsHover.map(({ itemName, route }) => (
                 <Box
                     key={itemName}
@@ -37,8 +37,8 @@ const NavbarItemsHover = () => {
                             alignItems='center'
                         >
                             <Text
-                                fontSize={"md"}
-                                fontWeight="medium"
+                                cursor='pointer'
+                                textStyle="md/medium"
                                 color={hoveredItem === itemName ? "white" : "gray.500"}
                             >
                                 {itemName}
@@ -53,7 +53,7 @@ const NavbarItemsHover = () => {
                             position="absolute"
                             top="100%"
                             left="0"
-                            bg="gray.800"
+                            background="gray.800"
                             padding="2"
                             borderRadius="md"
                             zIndex={10}

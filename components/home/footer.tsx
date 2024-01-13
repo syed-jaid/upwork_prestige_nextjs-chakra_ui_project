@@ -9,17 +9,28 @@ import { footerItems } from '@/Data/footer-data';
 
 const Footer = () => {
     return (
-        <Box maxWidth='1280px' marginX='auto' padding='40px'>
-            <Flex marginBottom='100px' display={{ base: 'block', md: 'flex' }} justifyContent='space-between'  >
+        <Box
+            maxWidth='1280px'
+            marginX='auto'
+            padding='40px'
+        >
+            <Flex
+                marginBottom='100px'
+                display={{ base: 'block', md: 'flex' }}
+                justifyContent='space-between'
+            >
                 <Box width='300px'>
                     <NavbarLogo />
                 </Box>
                 {footerItems.map(({ itemName, listItems }) =>
-                    <Box width='300px' marginTop={{ base: '30px', md: "10px" }} key={itemName}>
+                    <Box
+                        key={itemName}
+                        width='300px'
+                        marginTop={{ base: '30px', md: "10px" }}
+                    >
                         <Text
-                            fontSize='md'
                             color='white'
-                            fontWeight='semibold'
+                            textStyle='md/semibold'
                         >
                             {itemName}
                         </Text>
@@ -27,7 +38,7 @@ const Footer = () => {
                             <Flex>
                                 <Link href='#' key={item}>
                                     <Text
-                                        fontSize='md'
+                                        textStyle='md'
                                         color='gray.500'
                                         marginTop='15px'
                                         _hover={{ color: 'white' }}
@@ -36,8 +47,7 @@ const Footer = () => {
                                         {item === 'Careers' &&
                                             <Text
                                                 color='teal.300'
-                                                fontSize='sm'
-                                                fontWeight='medium'
+                                                textStyle='sm/medium'
                                                 border='1px solid #236456'
                                                 background='#112220'
                                                 padding='2px 12px'
@@ -56,16 +66,31 @@ const Footer = () => {
                 )}
             </Flex>
             <Flex justifyContent='end'>
-                <Flex gap='5px' background='gray.900' borderRadius='3xl' padding='4px 10px' alignItems='center'>
+                <Flex
+                    gap='5px'
+                    background='gray.900'
+                    borderRadius='3xl'
+                    padding='4px 10px'
+                    alignItems='center'
+                >
                     <GoDotFill style={{ color: '#48BB78', fontSize: '20px', }} />
-                    <Text color='gray.400' fontSize='sm'>
+                    <Text
+                        color='gray.400'
+                        textStyle='sm'
+                    >
                         All systems normal
                     </Text>
                 </Flex>
             </Flex>
             <Divider marginY='20px' />
-            <Flex alignItems='center' justifyContent='space-between'>
-                <Text color='gray.400' fontSize='sm'>
+            <Flex
+                alignItems='center'
+                justifyContent='space-between'
+            >
+                <Text
+                    color='gray.400'
+                    textStyle='sm'
+                >
                     © 2023 Prestige. All rights reserved.
                 </Text>
                 <Flex gap='15px'>

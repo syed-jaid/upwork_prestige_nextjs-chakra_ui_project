@@ -8,7 +8,7 @@ import PricingCards from './pricing-cards';
 const Pricing = () => {
     return (
         <Box marginBottom={{ base: '150px', md: '300px' }}>
-            <CommonButton icon={<HiOutlineCurrencyDollar style={{ color: "#33c6ab" }} />} text={'Pricing'} />
+            <CommonButton icon={<HiOutlineCurrencyDollar style={{ color: "#33c6ab" }} />} text='Pricing' />
             <SectionHeader
                 headerText='Supercharge your growth'
                 description="Whether you're a small startup, a growing mid-sized business, or a large enterprise, we have plans tailored to your specific demands."

@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../navbar";
 import { Box, } from "@chakra-ui/react";
-import GetStartSection from "./get-start-section";
+import GetStartSection from "./get-start/get-start-section";
 import DashboardImg from "./dashboard-img";
-import TrustedByLeaders from "./trusted-leaders";
-import ProductFeatures from "./product-features";
+import TrustedByLeaders from "./trusted-leaders/trusted-leaders";
+import ProductFeatures from "./product-features/product-features";
 import ManyFeatures from "./many-features/many-features";
 import OtherFeatures from "./other-features/other-features";
 import MuchFeatures from "./much-features/much-features";

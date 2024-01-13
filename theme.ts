@@ -10,7 +10,7 @@ const theme = extendTheme({
     },
   },
   colors: {
-
+    global_bg: "#0f0f0f"
   },
   fontSizes: {
     xs: "12px",
@@ -47,10 +47,62 @@ const theme = extendTheme({
     wider: "0.5px",
     widest: "1px",
   },
-  sizes: {
-    container: "100%",
-    full: "100%",
-    screen: "100vw",
+  textStyles: {
+    '5xl/semibold': {
+      fontSize: { base: '3xl', md: '5xl' },
+      fontWeight: "semibold",
+    },
+    '4xl/semibold': {
+      fontSize: "4xl",
+      fontWeight: "semibold",
+    },
+    '3xl/bold': {
+      fontSize: { base: "xl", sm: "3xl" },
+      fontWeight: "bold",
+    },
+    '2xl/semibold': {
+      fontSize: "2xl",
+      fontWeight: "semibold",
+    },
+    'xl/bold': {
+      fontSize: "xl",
+      fontWeight: "bold",
+    },
+    'lg/sm': {
+      fontSize: { base: 'sm', sm: 'lg' },
+    },
+    'lg/semibold': {
+      fontSize: "lg",
+      fontWeight: "semibold",
+    },
+    'md/semibold': {
+      fontSize: "md",
+      fontWeight: "semibold",
+    },
+    'md/medium': {
+      fontSize: "md",
+      fontWeight: "medium",
+    },
+    'md': {
+      fontSize: "md",
+      fontWeight: "normal",
+    },
+    'sm/bold': {
+      fontSize: "sm",
+      fontWeight: "bold",
+    },
+    'sm/semibold': {
+      fontSize: "sm",
+      fontWeight: "semibold",
+    },
+    'sm/medium': {
+      fontSize: "sm",
+      fontWeight: "medium",
+    },
+    'sm': {
+      fontSize: "sm",
+      fontWeight: "normal",
+    },
   },
   radii: {
     none: "0",

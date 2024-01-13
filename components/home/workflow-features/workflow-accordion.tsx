@@ -21,14 +21,29 @@ const AccordionSection = ({ id, title, description, state }: any) => (
         borderBottom='1px solid #4A5568'
         borderTop='none'
     >
-        <AccordionButton width={{ base: '100%', lg: '400px' }} paddingX='3px' justifyContent='space-between'>
-            <Text as='span' paddingX='0px' color='white' fontSize='md' fontWeight='semibold' textAlign='left'>
+        <AccordionButton
+            paddingX='3px'
+            justifyContent='space-between'
+            width={{ base: '100%', lg: '400px' }}
+        >
+            <Text
+                as='span'
+                paddingX='0px'
+                color='white'
+                textStyle='md/semibold'
+                textAlign='left'
+            >
                 {title}
             </Text>
             <AccordionIcon color='white' />
         </AccordionButton>
         <AccordionPanel paddingX='3px'>
-            <Text as='span' color='gray.400' fontSize='md' textAlign='left'>
+            <Text
+                as='span'
+                color='gray.400'
+                textStyle='md'
+                textAlign='left'
+            >
                 {description}
             </Text>
         </AccordionPanel>
@@ -36,7 +51,7 @@ const AccordionSection = ({ id, title, description, state }: any) => (
             <Box
                 width="100%"
                 height="1px"
-                bg=" gray.600"
+                background=" gray.600"
                 bottom='-15px'
                 position="relative"
                 overflow="hidden"
@@ -63,7 +78,12 @@ const WorkflowAccordion = () => {
     }, []);
 
     return (
-        <Flex display={{ base: 'block', lg: 'flex' }} gap='40px' alignItems='center' justifyContent='space-between'>
+        <Flex
+            gap='40px'
+            alignItems='center'
+            justifyContent='space-between'
+            display={{ base: 'block', lg: 'flex' }}
+        >
             <Box maxWidth={{ base: '100%', lg: '400px' }}>
                 <Accordion allowToggle index={state}>
                     {Accordion_Data.map((section) => (
@@ -71,7 +91,15 @@ const WorkflowAccordion = () => {
                     ))}
                 </Accordion>
             </Box>
-            <Box maxWidth={{ base: '100%', md: '600px' }} marginTop={{ base: '40px', lg: '0' }} marginX={{ base: 'auto', lg: "0px" }} overflow='hidden' marginBottom={{ base: '50px', md: '0px' }} background='gray.900' borderRadius='24px'>
+            <Box
+                background='gray.900'
+                borderRadius='24px'
+                overflow='hidden'
+                maxWidth={{ base: '100%', md: '600px' }}
+                marginTop={{ base: '40px', lg: '0' }}
+                marginX={{ base: 'auto', lg: "0px" }}
+                marginBottom={{ base: '50px', md: '0px' }}
+            >
                 {Accordion_Data.map((section) => (
                     <>
                         {section.id === state &&
@@ -81,13 +109,15 @@ const WorkflowAccordion = () => {
                                 animate={{ y: 0 }}
                                 transition={{ type: 'spring', stiffness: 50, damping: 8 }}
                             >
-                                <Img marginX='auto' src={`../Images/${section.src}.webp`} />
+                                <Img
+                                    marginX='auto'
+                                    src={`../Images/${section.src}.webp`}
+                                />
                             </motion.div>
                         }
                     </>
                 ))}
             </Box>
-
         </Flex>
     );
 };

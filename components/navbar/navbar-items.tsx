@@ -5,13 +5,12 @@ import React from "react";
 
 const NavbarItems = () => {
   return (
-    <Flex gap={"23px"} alignItems={"center"}>
+    <Flex gap="23px" alignItems="center">
       {navbarItems.map(({ itemName, route }) => (
         <Link href={route}>
           <Text
-            fontSize={"md"}
-            fontWeight="medium"
-            color={"gray.500"}
+            textStyle="md/medium"
+            color="gray.500"
             _hover={{ color: "white" }}
           >
             {itemName}

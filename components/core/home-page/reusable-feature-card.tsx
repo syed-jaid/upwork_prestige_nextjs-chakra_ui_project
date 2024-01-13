@@ -27,19 +27,19 @@ const ReusableFeatureCard = ({
                 >
                     {icon}
                 </Flex>
-                <Text color={smallTextColor} fontSize='md' fontWeight='semibold'>
+                <Text color={smallTextColor} textStyle='md/semibold'>
                     {smallText}
                 </Text>
             </Flex>
             <Text color='white' fontSize={{ base: '26px', md: '32px' }} fontWeight='semibold' marginY='14px'>
                 {headerText}
             </Text>
-            <Text color='gray.400' fontSize='md' >
+            <Text color='gray.400' textStyle='md' >
                 {description}
             </Text>
             <Flex
                 color='white'
-                fontSize='md'
+                textStyle='md'
                 gap='5px'
                 maxWidth='160px'
                 display={btnOff ? 'none' : 'flex'}

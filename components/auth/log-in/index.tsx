@@ -1,13 +1,19 @@
 "use client";
-import { Box, Button, Divider, Flex, Img, Text } from "@chakra-ui/react";
+import { useState } from "react";
 import Link from "next/link";
+import {
+  Box,
+  Button,
+  Divider,
+  Flex,
+  Img,
+  Text,
+} from "@chakra-ui/react";
 import AuthButton from "../../core/auth/auth-button";
 import InputField from "../../core/auth/input-field";
-import { useState } from "react";
 
 const LogInPage = () => {
   const [show, setShow] = useState<any>(false);
-
   return (
     <Box
       maxWidth="380px"
@@ -17,13 +23,13 @@ const LogInPage = () => {
     >
       <Link href="/">
         <Button
+          cursor='pointer'
           position="fixed"
-          top={"20px"}
-          left={"20px"}
+          top="20px"
+          left="20px"
           fontSize="xs"
           borderRadius="xl"
           color="white"
-          fontWeight="normal"
           background="gray.700"
           _hover={{ background: "gray.600" }}
         >
@@ -36,13 +42,7 @@ const LogInPage = () => {
         marginTop="20px"
         src="../Images/login-logo.webp"
       />
-
-      <Text
-        fontSize={{ base: "xl", sm: "3xl" }}
-        fontWeight="bold"
-        color="white"
-        textAlign="center"
-      >
+      <Text textStyle="3xl/bold" color="white" textAlign="center">
         Welcome back
       </Text>
       <Text color="gray.500" fontSize="xs" textAlign="center" marginTop="10px">
@@ -53,7 +53,6 @@ const LogInPage = () => {
           </span>
         </Link>
       </Text>
-
       <Box marginTop="30px">
         <InputField
           title="E-mail"
@@ -79,7 +78,7 @@ const LogInPage = () => {
           <Text
             marginTop="20px"
             marginBottom="15px"
-            fontSize="sm"
+            textStyle="sm"
             color="gray.500"
             textAlign="center"
             onClick={() => setShow(false)}
@@ -90,7 +89,7 @@ const LogInPage = () => {
           <Text
             marginTop="20px"
             marginBottom="15px"
-            fontSize="sm"
+            textStyle="sm"
             color="gray.500"
             textAlign="center"
             onClick={() => setShow(true)}
@@ -99,33 +98,25 @@ const LogInPage = () => {
           </Text>
         )}
       </Box>
-
       <Flex alignItems="center" gap="10px" marginBottom="15px">
         <Divider />
-        <Text color="gray.500" fontSize="xm">
+        <Text color="gray.500" fontSize="xs">
           or
         </Text>
         <Divider />
       </Flex>
-
       <Button
-        fontSize="sm"
+        textStyle="sm"
         borderRadius="2xl"
         paddingY="22px"
         width="100%"
         color="white"
-        fontWeight="normal"
         background="gray.700"
         _hover={{ background: "gray.600" }}
       >
         Single sign-on (SSO)
       </Button>
-      <Text
-        marginTop="32px"
-        fontSize="12px"
-        color="gray.500"
-        textAlign="center"
-      >
+      <Text marginTop="32px" fontSize="xs" color="gray.500" textAlign="center">
         You acknowledge that you read, and agree to our <br />
         <span style={{ fontWeight: "700" }}> Terms of Service</span> and our
         <span style={{ fontWeight: "700" }}> Privacy Policy.</span>

@@ -8,10 +8,14 @@ import { TbDeviceAnalytics } from 'react-icons/tb';
 
 const SimpleAnalytics = () => {
     return (
-        <Flex flexDirection={{ base: 'column', lg: 'row' }} alignItems='center'>
+        <Flex
+            alignItems='center'
+            flexDirection={{ base: 'column', lg: 'row' }}
+        >
             <Img
+                marginRight='auto'
                 maxWidth={{ base: '100%', md: '552px' }}
-                marginRight='auto' marginLeft={{ base: 'auto', lg: '0' }}
+                marginLeft={{ base: 'auto', lg: '0' }}
                 src='../Images/sa-img.webp'
             />
             <Box maxWidth={{ base: '100%', lg: '550px' }}>
@@ -38,7 +42,6 @@ const SimpleAnalytics = () => {
                     />
                 </Flex>
             </Box>
-
         </Flex>
     );
 };
