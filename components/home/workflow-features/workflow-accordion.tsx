@@ -14,7 +14,7 @@ import {
 import { motion } from 'framer-motion';
 import { Accordion_Data } from '@/Data/workflow-data';
 
-const AccordionSection = ({ id, title, description, state }: any) => (
+const AccordionSection = ({ id, title, description, state, setState }: any) => (
     <AccordionItem
         paddingY='15px'
         paddingX='0px'
@@ -25,6 +25,7 @@ const AccordionSection = ({ id, title, description, state }: any) => (
             paddingX='3px'
             justifyContent='space-between'
             width={{ base: '100%', lg: '400px' }}
+            onClick={() => setState(id)}
         >
             <Text
                 as='span'
@@ -87,7 +88,7 @@ const WorkflowAccordion = () => {
             <Box maxWidth={{ base: '100%', lg: '400px' }}>
                 <Accordion allowToggle index={state}>
                     {Accordion_Data.map((section) => (
-                        <AccordionSection key={section.id} {...section} state={state} />
+                        <AccordionSection key={section.id} {...section} state={state} setState={setState} />
                     ))}
                 </Accordion>
             </Box>
