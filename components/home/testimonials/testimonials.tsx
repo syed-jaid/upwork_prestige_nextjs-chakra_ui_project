@@ -7,7 +7,7 @@ import TestimonialsCard from './testimonials-card';
 
 const Testimonials = () => {
     return (
-        <Box marginBottom={{ base: '120px', md: '230px' }}>
+        <Box paddingX='20px' marginBottom={{ base: '120px', md: '230px' }}>
             <CommonButton icon={<LuMessageSquare style={{ color: "#33c6ab" }} />} text='Testimonials' />
             <SectionHeader
                 headerText='What are people saying'

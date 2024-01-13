@@ -54,7 +54,7 @@ const ManyFeaturesCard = () => {
                     initial={{ x: 0 }}
                 >
 
-                    <Img maxWidth='470px' src='../Images/ai-line.webp' alt="Image" />
+                    <Img maxWidth={{ base: '110%', md: '490px' }} src='../Images/ai-line.webp' alt="Image" />
                 </motion.div>
             </Box>
             <Text

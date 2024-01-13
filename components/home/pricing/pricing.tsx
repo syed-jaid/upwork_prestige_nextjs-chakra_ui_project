@@ -7,7 +7,7 @@ import SectionHeader from '../../core/home-page/section-header';
 import PricingCards from './pricing-cards';
 const Pricing = () => {
     return (
-        <Box marginBottom={{ base: '150px', md: '300px' }}>
+        <Box paddingX='20px' marginBottom={{ base: '150px', md: '300px' }}>
             <CommonButton icon={<HiOutlineCurrencyDollar style={{ color: "#33c6ab" }} />} text='Pricing' />
             <SectionHeader
                 headerText='Supercharge your growth'

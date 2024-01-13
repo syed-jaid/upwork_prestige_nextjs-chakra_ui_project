@@ -87,7 +87,6 @@ const TestimonialsCard = () => {
             <Flex
                 gap='30px'
                 background='global_bg'
-                paddingX='20px'
             >
                 {Array(20).fill(null).map(() =>
                     <TestimonialCard />

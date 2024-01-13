@@ -7,7 +7,7 @@ import FeaturesTab from './features-tab';
 
 const OtherFeatures = () => {
     return (
-        <Box>
+        <Box paddingX='20px'>
             <CommonButton icon={<PiLightningBold style={{ color: "#33c6ab" }} />} text='Features' />
             <SectionHeader
                 headerText='Other features'

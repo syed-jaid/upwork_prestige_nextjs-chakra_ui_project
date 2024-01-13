@@ -51,7 +51,7 @@ const FeaturesTab = () => {
 
     }
     return (
-        <Box padding='20px' marginBottom={{ base: '150', md: '300px' }} maxWidth='920' marginX='auto'>
+        <Box marginBottom={{ base: '150', md: '300px' }} maxWidth='920' marginX='auto'>
             <Tabs variant='unstyled'>
                 <TabList
                     background='gray.900'
