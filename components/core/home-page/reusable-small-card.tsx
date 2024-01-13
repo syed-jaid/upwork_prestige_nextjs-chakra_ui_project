@@ -13,6 +13,7 @@ const ReusableSmallCard = ({ icon, headerText, description }: any) => {
                 {description}
             </Text>
             <Flex
+                cursor='pointer'
                 color='white'
                 textStyle='md'
                 gap='5px'

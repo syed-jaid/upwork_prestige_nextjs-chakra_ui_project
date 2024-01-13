@@ -38,6 +38,7 @@ const ReusableFeatureCard = ({
                 {description}
             </Text>
             <Flex
+                cursor='pointer'
                 color='white'
                 textStyle='md'
                 gap='5px'
