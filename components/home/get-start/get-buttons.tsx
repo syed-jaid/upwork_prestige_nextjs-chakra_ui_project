@@ -21,6 +21,7 @@ const GetButtons = () => {
             flexDirection={{ base: 'column', sm: 'row' }}
         >
             <Flex
+                cursor='pointer'
                 color='black'
                 background='white'
                 gap='6px'
@@ -34,6 +35,7 @@ const GetButtons = () => {
                 <IoIosArrowForward />
             </Flex>
             <Flex
+                cursor='pointer'
                 color='white'
                 gap='6px'
                 paddingX='32px'

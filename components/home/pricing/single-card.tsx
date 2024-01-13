@@ -54,6 +54,7 @@ const SingleCard = ({ title, description, price, monthly, textColor, buttonColor
                 </Box>
                 {title === 'Pro' ?
                     <Flex
+                        cursor='pointer'
                         color='black'
                         background='white'
                         gap='6px'
@@ -67,6 +68,7 @@ const SingleCard = ({ title, description, price, monthly, textColor, buttonColor
                     </Flex>
                     :
                     <Flex
+                        cursor='pointer'
                         color='white'
                         background={buttonColor}
                         gap='6px'
