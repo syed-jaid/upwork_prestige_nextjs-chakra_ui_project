@@ -85,6 +85,7 @@ const WaitList = () => {
                     right='0'
                     width='500px'
                     src='../Images/small-dashboard.webp'
+                    alt="Image"
                 />
             </Flex >
         </Box >

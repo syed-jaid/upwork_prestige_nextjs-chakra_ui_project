@@ -43,7 +43,7 @@ const ManyFeatures = () => {
                         paddingX={{ base: '15px', sm: '40px' }}
                         paddingTop={{ base: '15px', sm: '40px' }}
                     >
-                        <Img src='../Images/dashbard-img.webp' />
+                        <Img src='../Images/dashbard-img.webp' alt="Image" />
                     </Box>
                     <Text
                         color='white'

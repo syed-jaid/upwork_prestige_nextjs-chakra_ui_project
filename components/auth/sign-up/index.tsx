@@ -32,6 +32,7 @@ const SignUpPage = () => {
         marginX="auto"
         marginTop="20px"
         src="../Images/login-logo.webp"
+        alt="Image"
       />
 
       <Text

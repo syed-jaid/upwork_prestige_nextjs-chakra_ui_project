@@ -25,7 +25,12 @@ const AiAssistant = ({ tab1 }: any) => {
                     animate={{ y: tab1 ? 0 : 200 }}
                     transition={{ type: 'spring', stiffness: 50, damping: 8 }}
                 >
-                    <Img maxWidth={{ base: '100%', md: '400px' }} marginX='auto' src='../Images/ai-assistant-img.webp' />
+                    <Img
+                        maxWidth={{ base: '100%', md: '400px' }}
+                        marginX='auto'
+                        src='../Images/ai-assistant-img.webp'
+                        alt="Image"
+                    />
                 </motion.div>
             </Box>
         </Flex>

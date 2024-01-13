@@ -17,6 +17,7 @@ const SimpleAnalytics = () => {
                 maxWidth={{ base: '100%', md: '552px' }}
                 marginLeft={{ base: 'auto', lg: '0' }}
                 src='../Images/sa-img.webp'
+                alt="Image"
             />
             <Box maxWidth={{ base: '100%', lg: '550px' }}>
                 <ReusableFeatureCard

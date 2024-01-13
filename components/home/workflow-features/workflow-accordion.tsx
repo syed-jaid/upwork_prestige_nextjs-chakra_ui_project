@@ -112,6 +112,7 @@ const WorkflowAccordion = () => {
                                 <Img
                                     marginX='auto'
                                     src={`../Images/${section.src}.webp`}
+                                    alt="Image"
                                 />
                             </motion.div>
                         }

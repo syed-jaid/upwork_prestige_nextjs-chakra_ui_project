@@ -54,6 +54,7 @@ const EasyCollaboration = () => {
                         maxWidth={{ sm: '378px' }}
                         borderRadius='3xl'
                         src='../Images/easy-collaboration-1.webp'
+                        alt="Image"
                     />
                     <ReusableSmallCard
                         icon={<FaRegCirclePlay style={{ color: "#F6AD55", fontSize: '20px' }} />}
@@ -68,6 +69,7 @@ const EasyCollaboration = () => {
                         borderRadius='3xl'
                         maxWidth={{ sm: '378px' }}
                         src='../Images/easy-collaboration-2.webp'
+                        alt="Image"
                     />
                     <ReusableSmallCard
                         icon={<FaRegCirclePlay style={{ color: "#F6AD55", fontSize: '20px' }} />}
@@ -82,6 +84,7 @@ const EasyCollaboration = () => {
                         maxWidth={{ sm: '378px' }}
                         borderRadius='3xl'
                         src='../Images/easy-collaboration-3.webp'
+                        alt="Image"
                     />
                     <ReusableSmallCard
                         icon={<FaRegCirclePlay style={{ color: "#F6AD55", fontSize: '20px' }} />}

@@ -25,7 +25,12 @@ const SimpleAnalytics = ({ tab2 }: any) => {
                     animate={{ y: tab2 ? 0 : 200 }}
                     transition={{ type: 'spring', stiffness: 50, damping: 8 }}
                 >
-                    <Img maxWidth={{ base: '100%', md: '400px' }} marginX='auto' src='../Images/simple-analytics-img.webp' />
+                    <Img
+                        maxWidth={{ base: '100%', md: '400px' }}
+                        marginX='auto'
+                        src='../Images/simple-analytics-img.webp'
+                        alt="Image"
+                    />
                 </motion.div>
             </Box>
         </Flex>

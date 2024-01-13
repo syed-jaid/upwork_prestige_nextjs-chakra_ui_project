@@ -44,6 +44,7 @@ const AiAssistant = () => {
                 maxWidth={{ base: '100%', md: '552px' }}
                 marginRight={{ base: 'auto', lg: '0' }}
                 src='../Images/ai-img.webp'
+                alt="Image"
             />
         </Flex>
     );

@@ -25,7 +25,12 @@ const SmartAutomation = ({ tab4 }: any) => {
                     animate={{ y: tab4 ? 0 : 200 }}
                     transition={{ type: 'spring', stiffness: 50, damping: 8 }}
                 >
-                    <Img maxWidth={{ base: '100%', md: '400px' }} marginX='auto' src='../Images/smart-automation-img.webp' />
+                    <Img
+                        maxWidth={{ base: '100%', md: '400px' }}
+                        marginX='auto'
+                        src='../Images/smart-automation-img.webp'
+                        alt="Image"
+                    />
                 </motion.div>
             </Box>
         </Flex>

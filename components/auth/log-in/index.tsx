@@ -41,6 +41,7 @@ const LogInPage = () => {
         marginX="auto"
         marginTop="20px"
         src="../Images/login-logo.webp"
+        alt="Image"
       />
       <Text textStyle="3xl/bold" color="white" textAlign="center">
         Welcome back
